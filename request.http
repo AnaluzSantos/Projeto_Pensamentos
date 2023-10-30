@@ -1,0 +1,69 @@
+POST http://localhost:3333/users 
+content-type: application/json
+
+{
+    "name": "Ana",
+    "email": "aaa@aaa",
+    "password": "123456788",
+    "confirm_password": "123456788"
+}
+
+######
+
+GET http://localhost:3333/users
+
+
+###
+
+GET http://localhost:3333/users/2
+
+
+###
+PUT http://localhost:3333/users/4
+content-type: application/json
+
+{
+    "name": "teste5",
+    "email": "aaa@aaa",
+    "password": "123456788",
+    "confirm_password": "123456788"
+}
+
+###
+
+DELETE  http://localhost:3333/users/3
+
+###
+
+POST http://localhost:3333/thoughts
+content-type: application/json
+
+{
+    "title": "Pensamento 09",
+    "description": "Pensamento do dia"
+}
+
+###
+
+GET http://localhost:3333/thoughts/
+
+###
+
+DELETE http://localhost:3333/thought/3
+
+###
+
+GET http://localhost:3333/thought/1
+
+###
+
+PUT http://localhost:3333/thought/2
+content-type: application/json
+{
+    "title": "Pensamento 05", 
+    "description": "Pensamento do dia"
+}
+
+###
+
+GET http://localhost:3333/thought/5
